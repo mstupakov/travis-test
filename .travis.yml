@@ -3,5 +3,11 @@ sudo: false
 
 language: cpp
 
+cpp:
+  - 4.9
+  - 5.2
+  - 6.4
+    7.1
+
 script:
   - make all
