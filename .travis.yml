@@ -7,7 +7,14 @@ cpp:
   - 4.9
   - 5.2
   - 6.4
-    7.1
+  - 7.1
+
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-5
 
 script:
   - make all
