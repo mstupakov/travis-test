@@ -17,7 +17,7 @@ addons:
       - g++-5
 
 after_success:
-  - bash <(./app)
+  - ./app
 
 script:
   - make all
