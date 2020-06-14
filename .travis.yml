@@ -20,6 +20,8 @@ matrix:
             - ubuntu-toolchain-r-test
           packages:
             - g++-4.9
+      install:
+            - update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.9 90
       env:
          - MATRIX_EVAL="CC=gcc-4.9 && CXX=g++-4.9"
 
@@ -30,6 +32,8 @@ matrix:
             - ubuntu-toolchain-r-test
           packages:
             - g++-5
+      install:
+            - update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 90
       env:
          - MATRIX_EVAL="CC=gcc-5 && CXX=g++-5"
 
@@ -40,6 +44,8 @@ matrix:
             - ubuntu-toolchain-r-test
           packages:
             - g++-6
+      install:
+            - update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-6 90
       env:
         - MATRIX_EVAL="CC=gcc-6 && CXX=g++-6"
 
@@ -50,6 +56,8 @@ matrix:
             - ubuntu-toolchain-r-test
           packages:
             - g++-7
+      install:
+            - update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-7 90
       env:
         - MATRIX_EVAL="CC=gcc-7 && CXX=g++-7"
 
